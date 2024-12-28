@@ -1,0 +1,22 @@
+//INPUT
+import java.io.*;
+class createfile{
+    public static void main(String[] args) {
+        File f=new File("C:\\Users\\KIIT\\LC.txt");
+        try{
+            if(f.createNewFile()){
+            System.out.println("CREATING FILE");
+            }
+            else{
+                System.out.println("FILE ALREADY CREATED");
+            }
+        }
+        catch(IOException i){
+            System.out.println("EXCEPTION HANDLING..");
+        }
+            
+        }
+    }
+//OUTPUT
+CREATING FILE
+LC
